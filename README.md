@@ -2,84 +2,208 @@
 
 [![banner](/Pictures/banner_1200x630.svg)](#)
 
-Blade Rounded Font is a font derived from skate blade and differs in its rounded
-edges designed by [Silverblur_type](https://github.com/silverblurtype). This is
-a modern, geometric and minimalistic font constructed with a few geometric
-shapes with constant thickness.
+Blade Rounded is a Latin (ID: `*Latn`) Display font designed by
+[The Blade Rounded Project Team](https://github.com/silverblurtype/bladerounded).
+Its design is based on skate blade and differs in its rounded edges presenting a
+modern, geometric and minimalistic font constructed with a few geometric shapes
+with constant thickness text expression.
 
-Type of use: graphic projects, displays, branding, logos, headlines.
+This font is ideal for any eye-catching general use like poster title, movie
+title, movie notice headings, and body headings.
 
 
 
 
-## Artificial Intelligence (A.I) Decrees
+## Verifying Content Integrity
 
 [![banner](/.internals/trademarks/banner_1200x100.svg)](#)
 
-This project deploys the use of one or more generative artificial intelligence
-such as but not limited to large language model (LLM) for the following tasks:
+To secure the content from unauthorized modification by anyone down to bit-level
+(`0|1`), they are cryptographically signed using one or more cryptography tools
+such as but not limited to:
+
+* [GnuPG](https://gnupg.org); AND/OR
+* [OpenSSL](https://www.openssl.org/).
+
+The public key and the associated certificate are attached. Only the main owner
+keeps and maintains the private keys. To verify the content's integrity:
 
 
 
-### Data Sourcing
+### GnuPG
+
+1. Install [GnuPG](https://gnupg.org) software if not present.
+2. Download the target file and its detached signature file (the `.asc` file
+   with the same filename).
+3. Download the public key file (`.gpg`).
+4. Place them next to each other in the directory.
+5. Open a terminal and execute the following command:
+
+```
+$ gpg --no-default-keyring --keyring /path/to/public.gpg --verify /path/to/file.asc
+```
+
+
+
+### OpenSSL
+
+1. Install [OpenSSL](https://www.openssl.org) software if not present.
+2. Download the target file and its detached signature file (the `.sig`/`.sign`
+   file with the same filename).
+3. Download the public certificate file (`.pem`) containing the public key
+   within.
+4. Place them next to each other in the directory.
+5. Open a terminal and execute the following command:
+
+```
+$ openssl dgst -verify /path/to/pubkey.pem -signature /path/to/file.sig /path/to/file
+```
+
+
+
+
+## Artificial Intelligence (A.I.) Decrees
+
+[![banner](/.internals/trademarks/banner_1200x100.svg)](#)
+
+This decree defines the project’s policy on the use of Artificial Intelligence.
+The following sections list data lifecycle activities and indicate whether A.I.
+is deployed. Unless explicitly stated otherwise (e.g. deployment with
+specifics), A.I. is not used for these tasks.
+
+
+
+### Data Sourcing & Acquisition
 
 > [!Note]
 >
-> * Performing enhanced web searches due to polluted search engine indexes.
-> * Performing completely generated media such as but not limited to images,
->   videos, and audios.
+> Example activities:
+>
+> * Performing enhanced web searches due to search engine pollution by A.I.
+>   slop contents.
+> * Performing completely auto-generated media such as but not limited to
+>   images, videos, and audios.
 
-* Used for data and reading material searching as the search engine across the
-  Internet had collapsed due to A.I publication slops.
-* Used for grammar and language correction detection on the human-made written
-  script.
+* Multiple Large Language Model (LLM) A.I.s as the search engine for searching
+  research materials across the Internet due to massive unwanted A.I publication
+  slops.
+* One or more LLM A.I.s as the grammar and language corrector and enhancer for
+  superpervised improvement against human written content.
 
 
 
-### Data Processing & Analytics
+### Data Processing & Transformation
 
 > [!Note]
 >
-> * Performing development via multi-steps queries (also known as
->   *vibe coding* or *agentic AI processing*).
-> * Performing data analytics via multi-steps queries (also known as
->   *vibe coding* or *AI vibing*).
-> * Performing dedicated and task specific work where conventional technologies
->   could not achieve such as but not limited to upscaling an image verbatim.
+> Example activities:
+>
+> * Performing multi-steps process development.
+> * Performing data sanitization like data cleaning and data deduplication.
+> * Performing data format compatibility conversion.
+> * Constructing and optimizing data processing libraries.
+> * Upscaling an image with neural network not achievable with conventional
+    image manipulation technologies.
 
-No deployment.
+* No deployment.
 
 
 
-### Data Testing
+### Data Storage & Security
 
 > [!Note]
+>
+> Example activities:
+>
+> * Performing security and threat detection.
+> * Performing `Data at Rest` encryption and health monitoring.
+> * Performing encryption data storage management.
+> * Performing automated data storage house-keeping.
+> * Performing data storage devices health monitoring and mitigation.
+
+* No deployment.
+
+
+
+### Data Analysis & Insight Generation
+
+> [!Note]
+>
+> Example activities:
+>
+> * Performing multi-steps data analytics.
+> * Performing pattern detection and recognition.
+> * Developing predictive modelling.
+> * Developing natural language queries models.
+> * Creating artificial intelligence's neural network models based on data
+>   feeds.
+> * Optimizing artificial intelligence's transfer learning, hyperparameter
+>   tuning, etc.
+
+* No deployment.
+
+
+
+### Data Quality Validation & Assurances
+
+> [!Note]
+>
+> Example activities:
 >
 > * Performing end-user use case simulated testings.
+> * Performing automated sanity testings.
+> * Performing penetration & security testings.
+> * Performing anomaly detection testings.
+> * Performing schema validations.
+> * Performing automated testing of data pipelines.
 
-No deployment.
-
-
-
-### Data Visualization
-
-> [!Note]
->
-> * Performing completely generated data visualization via multi-step queries
->   (also known as *vibe coding*).
-
-No deployment.
+* No deployment.
 
 
 
-### Data Archiving & Deletion
+### Data Visualization & Reporting
 
 > [!Note]
 >
-> * Performing data clean-up via multi-step queries (also known as
->   *vibe coding*).
+> Example activities:
+>
+> * Performing data graphical visualization creation based on data feeds.
+> * Performing summarized dashboarding with graphical design and data feeds.
+> * Performing report writing.
+> * Performing prediction projections.
 
-No deployment.
+* No deployment.
+
+
+
+### Data Governance & Compliance
+
+> [!Note]
+>
+> Example activities:
+>
+> * Performing personal identifiable information (PII) filtration and removal.
+> * Performing regulatory compliance checks (e.g., data filtration, censorship,
+>   removal as required by law).
+> * Performing compliance monitoring and validation.
+> * Performing data lineage tracking and analysis.
+> * Performing data audit trail analysis.
+
+* No deployment.
+
+
+
+### Data Sharing & Publication
+
+> [!Note]
+>
+> Example activities:
+>
+> * Performing document's metadata creation.
+> * Performing document translation.
+> * Processing data publication licensing and management.
+
+* No deployment.
 
 
 
@@ -88,49 +212,107 @@ No deployment.
 
 [![banner](/.internals/trademarks/banner_1200x100.svg)](#)
 
-Font files are binary objects which are **unsuitable for `git` commits**. Use
-`git tag` and `releases` strategy for version control instead. Only keep the
-`git` repository for font metadata and display purposes.
-
-**DO NOT** use `git-lfs` due to ambiguous storage allocation policies from git
-service providers.
-
-All fonts **MUST** be strictly licensed under
-[Open Font License](http://scripts.sil.org/OFL). Some designers modify the
-license terms arbitrarily without taking its legal consequences into account.
-Hence, **DO NOT** commit those fonts.
-
-For software supply chain, to guarentee the thumbnail generation **IS NOT**
-vendor-locked by any expensive or proprietary software, please **ONLY USE AND
-SUPPORT** open source image editing software specifically as follows:
-
-* **Inkscape (https://inkscape.org)** - for vector graphics maintenances and
-  exporting SVG plain vector files.
-
-For directory organizations:
-
-* The principal canvas **MUST BE SAVED** in `inkscape SVG format` and retain all
-  legal attributes (license, copyright, etc). The files **MUST HAVE**
-  `inkscape-` prefixes to avoid confusion. They are saved inside
-  `/Pictures/principal-canvas` directory.
-* The exported svg **MUST BE IN** `Plain SVG format` and retain all legal
-  attributes (license, copright, etc). The files **MUST NOT HAVE** `inkscape-`
-  prefixes. They are saved inside `/Pictures` directory.
-* The exported svg's text fields **MUST BE** converted into `path` data type
-  and then `union` into a single `foreground` path layer. This is to make sure
-  end-user can view the sample without needing to pre-setup the font files.
-
-For artificial intelligence:
-
-* **ONLY USE** for internal research or Internet searches internally.
-* **Any automated or "vibe" output commitments are STRICTLY PROHIBITED**.
-  * This is a simple artifact re-distribution project. **DO NOT LET ANY** A.I.
-    near any of your code and files commitment.
-  * If you sign-off any A.I. commitment, **YOU WILL BE HELD FULLY LIABLE FOR
-    ALL ITS CONCEQUENCES**.
-  * Therefore: **STRICTLY HUMAN COMMITMENT**.
-* **Use of passive A.I. (e.g. image upscaling) is rare to none** since
-  the thumbnail graphic materials **MUST** be in its vectorized form.
+1. This is a **STRICTLY DECENTRALIZED SELF-SUFFICIENT git repository** so all
+   critical and maintenance data and info **MUST** inside this repository.
+   Anyone has this repository can operate without any restrictions or
+   limitations.
+2. **Only keep the `git` repository for font metadata and display purposes**.
+   * Font files are binary objects which are **unsuitable for `git` commits**.
+   * Use `git tag` and `releases` version control strategy instead.
+3. **DO NOT use `git-lfs`** due to ambiguous and inconsistent storage allocation
+   policies from various git service providers.
+   * It will disrupt the work pipeline causing unwanted data losses downstream.
+   * Some actually monetarily charge you for storage space.
+4. All fonts **MUST be strictly licensed under
+   [Open Font License](http://scripts.sil.org/OFL) without ANY private arbitrary
+   terms (e.g. people from country X are prohibited to use; not allowed to
+   re-distribute without payment; trademarked font, etc)**.
+   * The goal is for downstream to use the font without fear of anything.
+   * Some designers modify the license terms without considering its legal
+     concequences into account. Also watch out for hidden modifications (The
+     same license name with different license body).
+   * When you have even a slightest doubt: **DROP** & **DO NOT** commit. There
+     are a lot of fonts in the market to deal with.
+5. To naturally monitor conflicting font families' names and IDs:
+   * **Font Filename** - **STRICTLY THE SAME as the font family name**. If it is
+     funny looking; leave it. It is *the creators' responsibilities* to sort out
+     proper naming conventions. For any following type descriptor
+     (e.g. `Regular` or `Bold`), it is first separated by a dash (`-`).
+     Descriptor can be anything.
+   * **Product SKU** - **STRICTLY THE SAME as the font family name only in
+     lowercase basic Latin, number, and dash (`[a-z][0-9]-`)**. You **MUST**
+     replace all spaces to dash (`-`) and non-compatible characters to their
+     basic Latin counterparts (e.g. `&` -> `and`; `天宇` -> `tian-yu`). The SKU
+     is used across various applications including repository URL construction.
+   * If any of the above is conflicting with existing registered font(s):
+     * Comply to Copyright laws: *the oldest (check its license ownership birth
+       time) stays; the new ones get updated*. In any case, the default action
+       is **dropping the new ones**.
+     * If you have the resources to drive the upstream changes:
+       * Make sure you are *prepared to possibly face any legal reprecussion*
+         from any socially undesirable creators.
+       * Drop the project with a public notice if things go sour.
+6. When a font is qualified for re-dstribution, please **DO HELP** the upstream
+   creators to clean up their license file and marketing pitches. This repo uses
+   the unified copyright accreditations licensing pattern. Hence, you should do
+   the following:
+   * The upstream owns their repository/workspace; we own the re-distributed
+     repository.
+   * For `CREATORS.txt` or `CONTRIBUTORS.txt`:
+     1. `CREATORS.txt` are for the legal entities that are responsible and own
+        the project copyright like authors, principal designers, principal
+        engineers, etc.
+     2. `CONTRIBUTORS.txt` are for any legal entities that contributes to
+        the project but are not owning the project copyright like pull-request
+        contributors, curators, etc.
+     3. Each files have their internal guides. Please comply accordingly.
+   * `LICENSE.txt`
+     1. Update the collective aliases (e.g. `The XYZ Project Authors`) matching
+        the project correctly. The format is the same as the ones in
+        `CREATORS.txt` and `CONTRIBUTORS.txt`.
+     2. **ENSURE the creators entry is linked correctly with upstream websites**.
+     3. When re-distributing a font, **ENSURE** the wording **CLEARLY STATES**
+        that we **ARE NOT** the creators but a re-distributor.
+     4. There should be **2 EMPTY lines** context separator between the
+        copyright entities list and the first line of the first clause.
+7. Please **ONLY USE AND SUPPORT** the following open source image editing
+   software for securing software supply chain from unwanted threats (e.g.
+   vendor-locked by any expensive or proprietary software):
+   * **GIMP (http://gimp.org)** - for rasterized graphics maintenances and
+     exporting non-vector graphic files.
+   * **Inkscape (https://inkscape.org)** - for vector graphics maintenances and
+     exporting SVG plain vector files.
+   * **FontForge (https://fontforge.org)** - for assembling and developing font
+     files.
+8. For the thumbnail:
+   * All known languages are already tabulated accordingly with their
+     ISO3166-Alpha2 (e.g. `ZH`) and/or ISO15924 language scripts (e.g.
+     `Hans`/`Hant` for `ZH` or entirely `ZH-Hans`/`ZH-Hant`).
+   * If the language is unsupported with blank or tofu, leave it. That's the
+     whole point of demonstrating the font's capabilities.
+   * The languages'/scripts' elements are labelled and ID-ed with full english
+     identifier using basic latin characters only for programming purposes.
+   * The principal canvas **MUST BE SAVED** in `inkscape SVG format` and retain
+     all legal attributes (license, copyright, etc). The files **MUST HAVE**
+     `inkscape-` prefixes to avoid confusion. They are saved inside
+     `Pictures/principal-canvas` directory.
+   * The exported svg **MUST BE IN** `Plain SVG format` and retain all legal
+     attributes (license, copright, etc). The files **MUST NOT HAVE**
+     `inkscape-` prefixes. They are saved inside `/Pictures` directory.
+   * The exported svg's texts **MUST BE** converted into `object path` data type
+     and then `union` into a single `foreground` path object layer. This is to
+     ensure the text remain consistent in the absent of font files (e.g.
+     end-user shopping the font on storefront without owning the font).
+9. For the artificial intelligence (A.I.):
+   1. Use of A.I. **IS ALLOWED INTERNALLY** as long as:
+      * You as a legal entity (e.g. person|organization) **BEARS FULLY LEGAL
+        REPONSIBILITIES for ALL** your signed-off commitment.
+      * Non-legal entities (e.g. bot|AI account|shadow account|alternate account)
+        **ARE STRICTLY PROHIBITED FROM ANY SIGNED-OFF COMMITMENT**.
+      * Update the A.I Decree section accordingly on any use of any kind of A.I.
+   2. For any non-supervised or unatteneded automation; or "vibe" commitments,
+      to comply with the previous, please **REJECT ALL WITH PREJUDICE AND BLOCK
+      THE ENTITY WHEN NECESSARY**.
 
 
 
@@ -144,11 +326,8 @@ For artificial intelligence:
 * [Agreed Inkscape License](.internals/terms-of-services/Inkscape-License.pdf)
 * [Agreed Inkscape Privacy Policy](.internals/privacy-policy/Inkscape-Privacy-Policy.pdf)
 * [Agreed (Holloway) Chew, Kean Ho's Upscaler License](.internals/terms-of-services/Upscaler-LICENSE.txt)
-* [Agreed Perchance.org Terms of Service](.internals/terms-of-services/PerchanceORG-Terms-of-Service.pdf)
-* [Agreed Perchance.org Privacy Policy](.internals/privacy-policy/PerchanceORG-Privacy-Policy.pdf)
 
-This entire repository is licensed under
-[Creative Commons Attribution 4.0 International License](LICENSE.txt).
+This entire repository is licensed under [SIL Open Font License](LICENSE.txt).
 To ensure better understanding of this license, the following sub-sections will
 briefly describe how to deploy the content.
 
@@ -166,7 +345,7 @@ the creator(s) as follows:
 
 ```
 Title: Blade Rounded Font
-Creators: Silverblur_type
+Creators: The Blade Rounded Project Team
 Packaged-By: (Holloway) Chew, Kean Ho
 Contact: hello@chewkeanho.com
 SKU: chewkeanho-visuals-fonts-blade-rounded

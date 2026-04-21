@@ -1,5 +1,11 @@
-Copyright 2026 (Holloway) Chew, Kean Ho <hello@chewkeanho.com>
-Copyright 2024 Silverblur_type (https://github.com/silverblurtype) <vlrntype@gmail.com>
+Copyright 2026 The Blade Rounded Project Re-Distributors (https://github.com/ChewKeanHo/visuals-fonts-blade-rounded)
+Copyright 2024 The Blade Rounded Project Team (https://github.com/silverblurtype/bladerounded)
+
+The above unified aliases have one or more actual legal entities listed outside
+of this document: (1) 'CREATORS.txt' or 'AUTHORS.txt'; and
+(2) 'CONTRIBUTORS.txt'. They are located usually placed next to this document
+in their respective project repository. Please refer to them for compiling the
+complete list accordingly.
 
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
